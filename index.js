@@ -17,7 +17,7 @@ const config = require('./config/key');
 
 // mongoose 연결 설정
 const mongoose = require('mongoose')
-mongoose.connect('', {
+mongoose.connect(config.mongoURI, {
   useNewUrlParser: true, useUnifiedTopology: true
 }).then(() => console.log('MongoDB Connected...'))
   .catch(err => console.log(err))
