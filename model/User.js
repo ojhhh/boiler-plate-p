@@ -2,7 +2,7 @@
 const mongoose = require('mongoose');
 
 // 스키마 연습을 위한 스키마 생성
-const userSchem = mongoose.Schema({
+const userSchema = mongoose.Schema({
     name: {
         type: String, // 타입
         maxlength: 50 // 문자 최대 길이
@@ -34,7 +34,7 @@ const userSchem = mongoose.Schema({
 })
 
 // 스키마로 모델로 감싸기 위해 설정
-const User = mongoose.model('User',userSchem) // mongoose.model('이름',스키마명)
+const User = mongoose.model('User',userSchema) // mongoose.model('이름',스키마명)
 
 // 모델을 다른곳에서도 쓸수 있게 설정
 module.exports = { User }
