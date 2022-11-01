@@ -12,7 +12,7 @@ const bodyParser = require('body-parser');
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
 
-// key.js를 가져옴 (설정 정보 비밀)
+// key.js를 가져옴
 const config = require('./config/key');
 
 // mongoose 연결 설정
